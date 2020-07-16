@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accediendo al DOM</title>
+</head>
+<body>
+    <p id="intro">Introduccion al DOM (Document Object Model)</p>
+    <p id="change">este datos es modifica con una funcion de JavaScript</p>
+    <button onclick="cambiar()">cambiar el contenido </button>
+<button id="evn">even handlers</button>
+</br>
+<div class="jumbotron"></div>
+    <h1>Calculadora</h1>
+    <br/>
+    <input type="number" placeholder="Ingresa Número 1" id= "num1">
+    <input type="number" placeholder="Ingresa Número 2" id= "num2">
+    <button>Realiza Operación</button>
+    El resultado es: <p id="resultado"></p>
+   
+</body>
+    <script>
+        document.getElementById("intro").innerHTML = "Aqui estoy cambiando el contenido del parrafo"
+    function cambiar(){
+        document.getElementById("change").innerHTML = "ya cambie gracias a una funcion llamada change"
+
+    }
+    //event handler
+    document.getElementById("evn").onclick = function(){
+       document.write("El usuario Utilizó el boton event");
+      alert("Bienvenidos a mi sitio WEB");
+    };
+    let n1 = document.getElementById("num1").value;
+    let n2 = document.getElementById("num2").value;
+    let resultado = n1 + n2;
+    
+document.getElementById("resultado").innerHTML = resultado;
+
+
+ //manejando elementos con tags
+ let data = document.getElementsByTagName ("p");
+            document.getElementById("tagmethod").innerHTML="el texto encontado es el parrafo es " +  data[0].innerHTML;
+            //manejando elementos con classnama
+            let dataclase= document.getElementsByClassName("parrafo")
+            document.getElementById
+            
+    
+    </script>
+
+</html>

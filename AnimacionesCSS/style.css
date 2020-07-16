@@ -1,0 +1,17 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: square;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+     position: relative;
+}
+@keyframes square{
+  0%{background-color: rgb(154, 154, 218);left: 25px;top: 25px;}
+  25%{background-color: rgb(158, 193, 223);left: 150px;top: 0px;}
+  50%{background-color: turquoise;left: 150px;top: 150px;}
+  100%{background-color: linear-gradient(to laft,rgb(230, 165, 215),rgb(212, 94, 167));left: 0px;top: 0px;}
+}

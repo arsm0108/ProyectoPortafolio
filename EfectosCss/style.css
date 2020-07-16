@@ -1,0 +1,36 @@
+.divone{
+
+}
+
+.divone{
+    background-color: blue;
+    width: 250px;
+    height: 80px;
+    border: 3px dotted red;
+    transform: translate(50px,250px);
+}
+p{
+   background-color: tomato;
+   width: 200px;
+   height: 150px;
+   /*grados para rotate*/
+   transform: rotate(-45deg);
+
+
+}
+.divtwo{
+    background-color: turquoise;
+    width: 100px;
+    height: 85px;
+    /*transform: scale(2,3);*/
+    transform: scaleX(2);
+    /*transform: scaleZ(2);*/
+}
+.divthree{
+   background-color: violet;
+   width: 150px;
+   height: 90px;
+   transform: skew(150deg);
+    transform: skewY(150deg);
+
+}
